@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PXi-F2-Ca4">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Boogaloo-Regular.ttf">
+            <string>Boogaloo-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="df4-w2-uFY">
+            <objects>
+                <navigationController id="PXi-F2-Ca4" customClass="NavigationController" customModule="TrafficDevilsTestTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OVK-u9-6hW">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BV1-FR-VrT" kind="relationship" relationship="rootViewController" id="LF3-Rk-F8T"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="voc-Ko-let" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-665" y="-2"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController storyboardIdentifier="GameViewController" id="BV1-FR-VrT" customClass="GameViewController" customModule="TrafficDevilsTestTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="4qk-I5-YsI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jGP-ce-ObE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="118" y="-2"/>
+        </scene>
+        <!--Game Pause View Controller1-->
+        <scene sceneID="gSi-dr-4XD">
+            <objects>
+                <viewController storyboardIdentifier="GamePauseViewController1" id="7Ph-55-s3W" customClass="GamePauseViewController1" customModule="TrafficDevilsTestTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dy4-Yx-UjC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shortened_chains" translatesAutoresizingMaskIntoConstraints="NO" id="8Py-UQ-fLR">
+                                <rect key="frame" x="131" y="162.66666666666666" width="131" height="23"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_menu_setting_btn" translatesAutoresizingMaskIntoConstraints="NO" id="GAM-JB-deL">
+                                <rect key="frame" x="80" y="109.00000000000001" width="233" height="53.666666666666671"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_map" translatesAutoresizingMaskIntoConstraints="NO" id="tvN-nQ-YYa">
+                                <rect key="frame" x="33.333333333333343" y="185.66666666666663" width="326.33333333333326" height="485"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="blm-zV-Hsb">
+                                <rect key="frame" x="106.66666666666669" y="395.66666666666669" width="180" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="9Js-zG-lu1"/>
+                                    <constraint firstAttribute="height" constant="65" id="jxJ-jJ-l8m"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Boogaloo-Regular" family="Boogaloo" pointSize="40"/>
+                                <state key="normal" title="Restart" backgroundImage="coins_count">
+                                    <color key="titleColor" red="0.84313725490000002" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="restartBtnTapped:" destination="7Ph-55-s3W" eventType="touchUpInside" id="By7-jd-xlS"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pause" textAlignment="center" lineBreakMode="tailTruncation" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="7Q5-6A-f6X">
+                                <rect key="frame" x="150" y="109.00000000000001" width="93" height="53.666666666666671"/>
+                                <fontDescription key="fontDescription" name="Boogaloo-Regular" family="Boogaloo" pointSize="46"/>
+                                <color key="textColor" red="0.84313725490000002" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe to exit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6wV-te-hgl">
+                                <rect key="frame" x="66" y="725.33333333333337" width="261" height="52.666666666666629"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Boogaloo-Regular" family="Boogaloo" pointSize="45"/>
+                                <color key="textColor" red="0.84313725490000002" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NMJ-LU-8D5"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tvN-nQ-YYa" firstAttribute="top" secondItem="8Py-UQ-fLR" secondAttribute="bottom" id="2Um-4Y-HEq"/>
+                            <constraint firstItem="8Py-UQ-fLR" firstAttribute="centerX" secondItem="Dy4-Yx-UjC" secondAttribute="centerX" id="9c6-WV-U45"/>
+                            <constraint firstItem="GAM-JB-deL" firstAttribute="leading" secondItem="Dy4-Yx-UjC" secondAttribute="leading" constant="80" id="Dl4-7r-dld"/>
+                            <constraint firstItem="NMJ-LU-8D5" firstAttribute="bottom" secondItem="6wV-te-hgl" secondAttribute="bottom" constant="40" id="JUv-2W-tNP"/>
+                            <constraint firstItem="GAM-JB-deL" firstAttribute="width" secondItem="GAM-JB-deL" secondAttribute="height" multiplier="74:17" id="KBN-eD-CBN"/>
+                            <constraint firstItem="8Py-UQ-fLR" firstAttribute="top" secondItem="GAM-JB-deL" secondAttribute="bottom" id="PEK-fT-kMz"/>
+                            <constraint firstItem="7Q5-6A-f6X" firstAttribute="centerY" secondItem="GAM-JB-deL" secondAttribute="centerY" id="Pba-K1-Hoi"/>
+                            <constraint firstItem="blm-zV-Hsb" firstAttribute="centerX" secondItem="tvN-nQ-YYa" secondAttribute="centerX" id="SFU-zp-i3M"/>
+                            <constraint firstItem="8Py-UQ-fLR" firstAttribute="top" secondItem="GAM-JB-deL" secondAttribute="bottom" id="Tmw-jn-aaY"/>
+                            <constraint firstAttribute="trailing" secondItem="GAM-JB-deL" secondAttribute="trailing" constant="80" id="YSq-gq-l4f"/>
+                            <constraint firstItem="blm-zV-Hsb" firstAttribute="centerY" secondItem="tvN-nQ-YYa" secondAttribute="centerY" id="eJe-u2-75T"/>
+                            <constraint firstItem="6wV-te-hgl" firstAttribute="centerX" secondItem="Dy4-Yx-UjC" secondAttribute="centerX" id="iu9-N5-I3M"/>
+                            <constraint firstItem="7Q5-6A-f6X" firstAttribute="width" secondItem="GAM-JB-deL" secondAttribute="width" multiplier="0.4" id="kBb-lZ-CFP"/>
+                            <constraint firstItem="tvN-nQ-YYa" firstAttribute="width" secondItem="GAM-JB-deL" secondAttribute="width" multiplier="1.4" id="mj4-7p-fz8"/>
+                            <constraint firstItem="7Q5-6A-f6X" firstAttribute="centerX" secondItem="GAM-JB-deL" secondAttribute="centerX" id="nCO-ff-rR3"/>
+                            <constraint firstItem="tvN-nQ-YYa" firstAttribute="top" secondItem="8Py-UQ-fLR" secondAttribute="bottom" id="nzc-ye-Epo"/>
+                            <constraint firstItem="8Py-UQ-fLR" firstAttribute="width" secondItem="GAM-JB-deL" secondAttribute="width" multiplier="0.5625" id="qUD-A3-fwd"/>
+                            <constraint firstItem="GAM-JB-deL" firstAttribute="top" secondItem="NMJ-LU-8D5" secondAttribute="top" constant="50" id="v2s-ug-v16"/>
+                            <constraint firstItem="GAM-JB-deL" firstAttribute="centerX" secondItem="Dy4-Yx-UjC" secondAttribute="centerX" id="zIf-Zo-hcF"/>
+                            <constraint firstItem="tvN-nQ-YYa" firstAttribute="centerX" secondItem="Dy4-Yx-UjC" secondAttribute="centerX" id="zoK-9h-Kkd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundView" destination="Dy4-Yx-UjC" id="KjW-C4-c3x"/>
+                        <outlet property="restartBtn" destination="blm-zV-Hsb" id="BXD-mG-7GF"/>
+                        <outlet property="tapToExitHint" destination="6wV-te-hgl" id="Rom-y5-EnP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bhO-mS-Ff5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="881.67938931297704" y="-2.1126760563380285"/>
+        </scene>
+        <!--Internet Controller-->
+        <scene sceneID="GIo-Qt-WAn">
+            <objects>
+                <viewController storyboardIdentifier="InternetController" id="rLe-iD-mJP" customClass="InternetController" customModule="TrafficDevilsTestTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fqW-eu-sgc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B7Q-dW-vyh">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YOD-Sa-HbK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="B7Q-dW-vyh" firstAttribute="top" secondItem="YOD-Sa-HbK" secondAttribute="top" id="KgS-YU-Oip"/>
+                            <constraint firstItem="B7Q-dW-vyh" firstAttribute="trailing" secondItem="YOD-Sa-HbK" secondAttribute="trailing" id="jR4-m6-U6J"/>
+                            <constraint firstItem="B7Q-dW-vyh" firstAttribute="leading" secondItem="YOD-Sa-HbK" secondAttribute="leading" id="n0J-Uf-ftz"/>
+                            <constraint firstItem="B7Q-dW-vyh" firstAttribute="bottom" secondItem="YOD-Sa-HbK" secondAttribute="bottom" id="qiV-Pe-kZG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="B7Q-dW-vyh" id="6ji-Vo-K6D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9xe-ti-v2Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1640.4580152671756" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background_map" width="338" height="485"/>
+        <image name="coins_count" width="672" height="269"/>
+        <image name="main_menu_setting_btn" width="355" height="91"/>
+        <image name="shortened_chains" width="207" height="23"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

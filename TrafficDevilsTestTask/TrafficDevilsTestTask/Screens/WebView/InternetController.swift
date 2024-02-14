@@ -11,13 +11,13 @@ import WebKit
 
 class InternetController: UIViewController {
     
+    @IBOutlet private weak var backButton: UIBarButtonItem!
     @IBOutlet private weak var webView: WKWebView!
     
     var urlToLoad: URL?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        webView.navigationDelegate = self
         loadURL()
     }
     
@@ -25,6 +25,17 @@ class InternetController: UIViewController {
         if let url = urlToLoad {
             let request = URLRequest(url: url)
             webView.load(request)
+        }
+    }
+    
+    @IBAction private func backButtonTapped(_ sender: UIBarButtonItem) {
+        if webView.canGoBack {
+            webView.goBack()
+        } else {
+            self.dismiss(animated: true)
+            let vc = ViewSource.mainScreen()
+            vc.modalPresentationStyle = .overFullScreen
+            NavigationController.shared?.pushViewController(vc, animated: false)
         }
     }
 }

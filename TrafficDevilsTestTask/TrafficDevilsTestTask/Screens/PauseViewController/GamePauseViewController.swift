@@ -10,9 +10,7 @@ import UIKit
 
 
 protocol GamePauseDelegate {
-    
     func restartGame()
-    
 }
     
 
@@ -23,6 +21,7 @@ class GamePauseViewController1: UIViewController {
     @IBOutlet private weak var restartBtn: UIButton!
     @IBOutlet private weak var tapToExitHint: UILabel!
     
+    var isGamePaused: Bool = false
     var delegate: GamePauseDelegate?
     
     private var isRestart = false
@@ -46,10 +45,10 @@ class GamePauseViewController1: UIViewController {
     
     private func presentGameScreen() {
         dismiss(animated: true, completion: nil)
+        isGamePaused = true
     }
     
     private func restartGame() {
-        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "restart"), object: nil)
         delegate?.restartGame()
         presentGameScreen()
     }
@@ -59,6 +58,6 @@ class GamePauseViewController1: UIViewController {
     }
     
     @IBAction private func restartBtnTapped(_ sender: UIButton) {
-        isRestart = true
+        restartGame()
     }
 }

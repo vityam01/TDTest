@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ios-yoya-busy-life-world-mod-ref-01.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>arm64</string>
+			</array>
+			<key>buildNumber</key>
+			<string>1</string>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>FBB5CBAD2230C79C4855912E4DE859BD4818A80C</string>
+				<key>dateExpires</key>
+				<string>14.11.2024</string>
+				<key>type</key>
+				<string>Apple Development</string>
+			</dict>
+			<key>embeddedBinaries</key>
+			<array>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>armv7</string>
+						<string>arm64</string>
+					</array>
+					<key>buildNumber</key>
+					<string>1</string>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>FBB5CBAD2230C79C4855912E4DE859BD4818A80C</string>
+						<key>dateExpires</key>
+						<string>14.11.2024</string>
+						<key>type</key>
+						<string>Apple Development</string>
+					</dict>
+					<key>name</key>
+					<string>Pushwoosh.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>4LMH8QQN35</string>
+						<key>name</key>
+						<string>J.K.M.G MEDIA TECH LTD</string>
+					</dict>
+					<key>versionNumber</key>
+					<string>1.0</string>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>arm64</string>
+					</array>
+					<key>buildNumber</key>
+					<string>1</string>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>FBB5CBAD2230C79C4855912E4DE859BD4818A80C</string>
+						<key>dateExpires</key>
+						<string>14.11.2024</string>
+						<key>type</key>
+						<string>Apple Development</string>
+					</dict>
+					<key>entitlements</key>
+					<dict>
+						<key>application-identifier</key>
+						<string>4LMH8QQN35.com.demax.digital.development.yoya-1.NotificationService</string>
+						<key>com.apple.developer.team-identifier</key>
+						<string>4LMH8QQN35</string>
+						<key>get-task-allow</key>
+						<true/>
+					</dict>
+					<key>name</key>
+					<string>NotificationService.appex</string>
+					<key>profile</key>
+					<dict>
+						<key>UUID</key>
+						<string>fcc99644-3603-4dae-8767-6c78e90d5658</string>
+						<key>dateExpires</key>
+						<string>13.02.2025</string>
+						<key>name</key>
+						<string>iOS Team Provisioning Profile: *</string>
+					</dict>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>4LMH8QQN35</string>
+						<key>name</key>
+						<string>J.K.M.G MEDIA TECH LTD</string>
+					</dict>
+					<key>versionNumber</key>
+					<string>1.0</string>
+				</dict>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>4LMH8QQN35.com.demax.digital.development</string>
+				<key>aps-environment</key>
+				<string>development</string>
+				<key>com.apple.developer.team-identifier</key>
+				<string>4LMH8QQN35</string>
+				<key>com.apple.developer.usernotifications.time-sensitive</key>
+				<true/>
+				<key>com.apple.security.application-groups</key>
+				<array>
+					<string>group.com.demax.digital.development</string>
+				</array>
+				<key>get-task-allow</key>
+				<true/>
+			</dict>
+			<key>name</key>
+			<string>ios-yoya-busy-life-world-mod-ref-01.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>363db214-ab2d-441b-b8c3-9997fdc60c7d</string>
+				<key>dateExpires</key>
+				<string>13.02.2025</string>
+				<key>name</key>
+				<string>iOS Team Provisioning Profile: com.demax.digital.development</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>4LMH8QQN35</string>
+				<key>name</key>
+				<string>J.K.M.G MEDIA TECH LTD</string>
+			</dict>
+			<key>versionNumber</key>
+			<string>1.0</string>
+		</dict>
+	</array>
+</dict>
+</plist>

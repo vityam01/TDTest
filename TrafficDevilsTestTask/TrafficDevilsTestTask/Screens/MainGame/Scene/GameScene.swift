@@ -54,7 +54,7 @@ class GameScene: SKScene {
         node.physicsBody = SKPhysicsBody(circleOfRadius: 20)
         node.physicsBody?.restitution = 0.0
         node.physicsBody?.linearDamping = 0.0
-        node.physicsBody?.allowsRotation = false
+        node.physicsBody?.allowsRotation = true
         node.physicsBody?.categoryBitMask = 0x1 << 0
         node.physicsBody?.contactTestBitMask = 0x1 << 1
         
